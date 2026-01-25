@@ -2,12 +2,14 @@
 
 OSC 9 Progress bar support for Ruby.
 
+https://github.com/user-attachments/assets/98515154-628c-4338-bc43-42705bc38652
+
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
-
-```bash
-bundle add osc9
+```ruby
+group :test do
+  gem "osc9", github: "varyform/osc9"
+end
 ```
 
 ## Usage
@@ -31,9 +33,3 @@ require "osc/progress/integrations/minitest"
 ```
 
 This will automatically register the reporter.
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`.
