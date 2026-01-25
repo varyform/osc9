@@ -1,7 +1,12 @@
+# frozen_string_literal: true
+
 require "minitest"
 require_relative "../../progress"
 
+# Minitest integration for OSC9 progress reporting
 module Minitest
+  # Reporter that displays test progress using OSC9 escape sequences.
+  # Automatically updates the terminal progress bar as tests run.
   class OscProgressReporter < Reporter
     def initialize(io = $stdout, options = {})
       super
@@ -27,7 +32,7 @@ module Minitest
 
         @has_failure = true unless result.passed? || result.skipped?
 
-        if @total && @total > 0
+        if @total&.positive?
           percent = (@count * 100) / @total
 
           if @has_failure
@@ -40,8 +45,8 @@ module Minitest
     end
   end
 
-  def self.plugin_osc_progress_init(options)
-    self.reporter.reporters << OscProgressReporter.new
+  def self.plugin_osc_progress_init(_options)
+    reporter.reporters << OscProgressReporter.new
   end
 end
 

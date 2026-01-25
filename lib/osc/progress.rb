@@ -1,4 +1,8 @@
+# frozen_string_literal: true
+
 module OSC
+  # Progress reporter using OSC9 escape sequences for terminal integration.
+  # Supports progress bars in compatible terminals like iTerm2 and Ghostty.
   class Progress
     RESET = 0
     PROGRESS = 1

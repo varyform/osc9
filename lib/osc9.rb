@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative "osc9/version"
 require_relative "osc/progress"
 
