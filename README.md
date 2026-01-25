@@ -1,9 +1,10 @@
 # osc9
 
-[OSC 9](https://conemu.github.io/en/AnsiEscapeCodes.html#OSC_Operating_system_commands) Progress bar support for Ruby.
+[OSC 9](https://conemu.github.io/en/AnsiEscapeCodes.html#OSC_Operating_system_commands) (Operating System Change Notification) ANSI escape sequence for supporting terminals ([iTerm2](https://iterm2.com/), [Ghostty](https://ghostty.org/), etc.) 
+
+So far only progress bar is supported.
 
 https://github.com/user-attachments/assets/dd562ffe-094e-4376-a5ac-b8de7b78c92c
-
 ## Installation
 
 ```ruby
