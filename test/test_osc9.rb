@@ -6,6 +6,8 @@ class TestOsc9 < Minitest::Test
   def setup
     @io = StringIO.new
     @progress = OSC::Progress.new(io: @io)
+
+    sleep(1) if ENV["DEMO"]
   end
 
   def test_that_it_has_a_version_number
@@ -28,6 +30,10 @@ class TestOsc9 < Minitest::Test
     @progress.error(45)
 
     assert_equal "\e]9;4;2;45\e\\", @io.string
+  end
+
+  def test_failing_for_demo
+    assert_equal 1, 2 if ENV["DEMO"]
   end
 
   def test_reset

@@ -33,3 +33,9 @@ require "osc/progress/integrations/minitest"
 ```
 
 This will automatically register the reporter.
+
+To test the integration, you can run the following command:
+
+```bash
+DEMO=1 rake test
+```
