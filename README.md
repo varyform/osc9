@@ -1,6 +1,6 @@
-# Osc9
+# osc9
 
-OSC 9 Progress bar support for Ruby.
+[OSC 9](https://conemu.github.io/en/AnsiEscapeCodes.html#OSC_Operating_system_commands) Progress bar support for Ruby.
 
 https://github.com/user-attachments/assets/98515154-628c-4338-bc43-42705bc38652
 
