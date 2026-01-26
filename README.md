@@ -30,7 +30,7 @@ progress.reset
 To use the OSC Progress reporter with Minitest, require the integration file in your `test_helper.rb`:
 
 ```ruby
-require "osc/progress/integrations/minitest"
+require "osc/progress/integrations/minitest" if STDOUT.isatty
 ```
 
 This will automatically register the reporter.
