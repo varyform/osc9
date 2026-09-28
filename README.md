@@ -1,6 +1,6 @@
 # osc9
 
-[OSC 9](https://conemu.github.io/en/AnsiEscapeCodes.html#OSC_Operating_system_commands) (Operating System Change Notification) ANSI escape sequence for supporting terminals ([iTerm2](https://iterm2.com/), [Ghostty](https://ghostty.org/), etc.) 
+[OSC 9](https://conemu.github.io/en/AnsiEscapeCodes.html#OSC_Operating_system_commands) (Operating System Command) ANSI escape sequence for supporting terminals ([iTerm2](https://iterm2.com/), [Ghostty](https://ghostty.org/), etc.) 
 
 So far only progress bar is supported.
 

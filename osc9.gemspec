@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["varyform@gmail.com"]
   spec.license = "MIT"
 
-  spec.summary = "OSC9 (Operating System Change Notification) ANSI escape sequence for supporting terminals " \
+  spec.summary = "OSC9 (Operating System Command) ANSI escape sequence for supporting terminals " \
                  "(iTerm2, Ghostty, etc.)"
   spec.homepage = "https://github.com/varyform/osc9"
   spec.required_ruby_version = ">= 3.2.0"
